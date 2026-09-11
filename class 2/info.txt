@@ -1,0 +1,6 @@
+we have learned how to add italic and bold font
+have got to know how to break line
+have got know how to create a horizontal line
+have learned how to add any icon to our webpages
+<center> tag
+have got to know how to add emoji

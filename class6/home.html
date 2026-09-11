@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+    <h1>Student Learning Portal</h1>
+    <p>Learn. Practice. Build. Grow</p>
+    </header>
+
+    <nav>
+        <a href="">Home</a>
+        <span> |</span>
+        <a href="">About</a>
+        <span> |</span>
+        <a href="">Courses</a>
+        <span> |</span>
+        <a href="">Timetable</a>
+        <span> |</span>
+        <a href="">Assignments</a>
+        <span> |</span>
+        <a href="">Registration</a>
+        <span> |</span>
+        <a href="">Profile</a>
+        <span> |</span>
+        <a href="">Contact</a>
+        <hr>
+    </nav>
+
+    <main>
+        <section id="Welcome">
+            <h2>Welcome to student learning portal</h2>
+            <p>This portal helps students learn programming, complete assignments and track their journey </p>
+            <img src="https://images.unsplash.com/photo-1787613499704-c0071291b5cf?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Students learning programming and build your skills" width="300px" height="300px"/>
+            <hr>
+        </section>
+
+        <section id="about-us">
+            <h2>About Us</h2>
+            <br>
+            <p>Student Learning Portal is an educational platform designed for students who want to learn programming and improve their technical skills.</p>
+            <h3>Our goals</h3>
+            <ul>
+                <li>Learn programming fundatmentals</li>
+                <li>Practice coding regularly</li>
+                <li>Complete real-world projects</li>
+                <li>Improve problem-solving skills</li>
+                <li>Prepare for technical interviews</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+        </section>
+
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <h3>HTML</h3>
+            <p>Learn the structure of website using HTML</p>
+            <ul>
+                <li>HTML basics</li>
+                <li>Text Formatting</li>
+                <li>Links and images</li>
+                <li>Tables</li>
+                <li>Forms</li>
+                <li>Sematic HTML</li>
+            </ul>
+            <a href="https://www.w3schools.com/html/html_intro.asp">Enroll now</a>
+            <br>
+            <h3>CSS</h3>
+            <p>Lear how to style and design websites.</p>
+            <ul>
+                <li>Selector</li>
+                <li>Colors</li>
+                <li>Box model</li>
+                <li>Flexbox</li>
+                <li>responsive design</li>
+            </ul>
+
+            <hr>
+        </section>
+
+        <section id="timetable">
+            <h2>Weekly TimeTable</h2>
+            <table border="2" cellpadding="4" cellspacing="3">
+                <caption>Student Weekly Class Schedule</caption>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+                    <th>09:00 - 10:00</th>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Javascript</td>
+                    <td>SQL</td>
+                    <td>Node.js</td>
+                </tr>
+
+                <tr>
+                    <th>10:00 - 11:00</th>
+                    <td>CSSL</td>
+                    <td>HTML</td>
+                    <td>SQL</td>
+                    <td>Javascript</td>
+                    <td>Node.js</td>
+                </tr>
+
+                <tr>
+                    <th>11:00 - 12:00</th>
+                    <td colspan="5">Practice session</td>
+                </tr>
+
+                <tr>
+                    <th>12:00 -01:00</th>
+                    <td>SQL</td>
+                    <td>Javascript</td>
+                    <td>HTML</td>
+                    <td>Node.js</td>
+                    <td>project</td>
+                </tr>
+
+                <tr>
+                    <th>01:00 - 01:00</th>
+                    <td colspan="5">Lunch Break</td>
+                </tr>
+
+                <tr>
+                    <th>02:00 -03:00</th>
+                    <td>Project</td>
+                    <td>Practice</td>
+                    <td>Project</td>
+                    <td>Practice</td>
+                    <td>Revision</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">Weekend: Revision & Project Work</td>
+                </tr>
+
+            </table>
+            <br>
+            <hr>
+        </section>
+
+
+        <Section id="forms">
+            <h2>Student registration</h2>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input placeholder="Enter your name" id="name"/>
+                <br>
+                <br>
+                <label for="mail">Email:</label>
+                <input type="email" placeholder="example@gmail.com" id="mail"/>
+                <br>
+                <br>
+                <label for="pass">Password:</label>
+                <input id="pass" type="password"/>
+                <br>
+                <br>
+                <label for="age">Age:</label>
+                <input type="number" id="age"/>
+                <br>
+                <br>
+                <label>Date of Birth</label>
+                <input type="date"/>
+                <br>
+                <br>
+                <p><label>Gender:</label>
+                    <input type="radio" name="gender"/>
+                    <label>Male:</label>
+                    <input type="radio" name="gender"/>
+                    <label>Female:</label>
+                    <input type="radio" name="gender"/>
+                    Other
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+                <span>Select Course:</span>
+                <select>
+                    <option>--Select COurse --</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>HTML</option>
+                    <option>Node.js</option>
+                </select>
+                <br>
+                <br>
+                <label>Skills:</label>
+                <input type="checkbox"/>
+                <label>HTML:</label>
+                <input type="checkbox"/>
+                <label>Javascript:</label>
+                <input type="checkbox"/>
+                <span>SQL</span>
+                <br>
+                <br>
+                <label>Experience Level:</label>
+                <input/>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <br>
+                <div>Tell us about yourself:</div>
+                <textarea cols="50" rows="10">Write Something about yourself...</textarea>
+                <br>
+                <br>
+                <label>Upload Resume:</label>
+                <input type="file"/>
+                <br>
+                <br>
+                <label>Portfolio Website</label>
+                <input type="url" placeholder="https://example.com"/>
+                <br>
+                <br>
+                <label>Phone Number</label>
+                <input type="number" placeholder="9876543210"/>
+            </fieldset>
+        </Section>
+    </main>
+</body>
+</html>

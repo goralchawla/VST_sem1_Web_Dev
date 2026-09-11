@@ -1,0 +1,8 @@
+<input/> to take input
+<feildset> to create a box
+<legend> to add a text on border of box
+<label> to add text in start of input feild
+<textarea> for expandable input box
+<select><option> for dropdown menu
+<botton> to create button
+<table> to create table

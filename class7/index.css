@@ -1,0 +1,37 @@
+/* #one{
+    color: green;
+}
+
+.two{
+    color: purple;
+} */
+
+
+/* h3{
+    color: blue;
+} */
+
+#main{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* border-radius: 50%; */
+    transition: 2s;
+}
+
+#child{
+    height: 50% ;
+    width: 50%;
+    background-color: green;
+    margin-top: auto;
+    
+    /* border-radius: 50%; */
+    
+}
+
+#main:hover,#child{
+    margin-left: 50%;
+    border-radius: 50%;
+    background-color: aquamarine;
+}
+
