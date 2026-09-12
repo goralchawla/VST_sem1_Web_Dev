@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(0, 0, 34);
+        }
+
+        #nav-1{
+            color: white;
+            display: inline-block;
+            position: relative;
+            top: 25px;
+            left: 40px;
+        }
+
+        #nav-2{
+            color: rgb(12, 52, 231);
+            display: inline-block;
+            position: relative;
+            top: 25px;
+            left: 40px;
+        }
+
+        #Home{
+            color: white;
+            font-size: 18px;
+            position: relative;
+            top: 20px;
+            left: 200px;
+        }
+
+        #Speakers{
+            color: white;
+            font-size: 18px;
+            position: relative;
+            top: 20px;
+            left: 300px;
+        }
+
+        #Schedule{
+            color: white;
+            font-size: 18px;
+            position: relative;
+            top: 20px;
+            left: 400px;
+        }
+
+        #Register{
+            color: white;
+            font-size: 18px;
+            position: relative;
+            top: 20px;
+            left: 500px;
+        }
+
+        #button-1{
+            border: 0px;
+            background-color: rgb(55, 4, 164);
+            color: white;
+            padding: 15px 40px;
+            position: relative;
+            border-radius: 12px;
+            font-size: 18px;
+            top: 15px;
+            left: 700px;
+            
+        }
+
+        #p-1{
+            color: blue;
+            position: relative;
+            top: 25px;
+            font-weight: bolder;
+        }
+
+        #p-2{
+            color: blue;
+            position: relative;
+            left: 10px;
+            font-weight: bolder;
+            top: 25px;
+        }
+
+        #con-reg{
+            font-size: 50px;
+            position: relative;
+            top: 35px;
+        }
+
+        #p-3{
+            position: relative;
+            top: 35px;
+            font-size: 25px;
+        }
+
+        #per-info{
+            height: 500px;
+            width: 42%;
+            border: 1px solid black;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 15px 15px;
+            position: relative;
+            top: 50px;
+        }
+
+        #con-pef{
+            height: 500px;
+            width: 42%;
+            border: 1px solid black;
+            border-radius: 15px;
+            margin: 15px 15px;
+            display: inline-block;
+            position: relative;
+            top: 50px;
+        }
+
+        #h-1{
+            color: blue;
+            position: relative;
+            top: 15px;
+            left: -110px;
+        }
+
+        #name{
+            position: relative;
+            top: 25px;
+            left: -210px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        .star{
+            color: red;
+            position: relative;
+            top: 25px;
+            left: -210px;
+        }
+
+        #FN{
+            position: relative;
+            top: 31px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 5px;
+        }
+
+        #mail{
+            position: relative;
+            top: 50px;
+            left: -230px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        .star1{
+            color: red;
+            position: relative;
+            top: 50px;
+            left: -230px;
+        }
+
+        #email{
+            position: relative;
+            top: 50px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 5px;
+        }
+
+        #number{
+            position: relative;
+            top: 70px;
+            left: -230px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #star2{
+            color: red;
+            position: relative;
+            top: 70px;
+            left: -230px;
+        }
+
+        #phone{
+            position: relative;
+            top: 70px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 5px;
+        }
+
+        #DOB{
+            position: relative;
+            top: 90px;
+            left: -205px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #star3{
+            color: red;
+            position: relative;
+            top: 90px;
+            left: -205px;
+        }
+
+        #date{
+            position: relative;
+            top: 90px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 5px;
+        }
+
+        #gender{
+            position: relative;
+            top: 110px;
+            left: -225px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #star4{
+            color: red;
+            position: relative;
+            top:110px;
+            left: -225px;
+        }
+
+        #g1{
+            position: relative;
+            top: 125px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: -230px;
+        }
+
+        #male{
+            position: relative;
+            top: 123px;
+            left: -450px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #g2{
+            position: relative;
+            top: 100px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: -70px;
+        }
+
+        #female{
+            position: relative;
+            top: 97px;
+            left: -280px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #g3{
+            position: relative;
+            top: 75px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 100px;
+        }
+
+        #other{
+            position: relative;
+            top: 73px;
+            left: -110px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #h-2{
+            color: blue;
+            position: relative;
+            top: 15px;
+            left: -100px;
+        }
+
+        #ticket{
+            position: relative;
+            top: 30px;
+            left: -210px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #star5{
+            color: red;
+            position: relative;
+            top:30px;
+            left: -210px;
+        }
+
+        #t1{
+            position: relative;
+            top: 50px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: -220px;
+        }
+
+        #Student{
+            position: relative;
+            top: 47px;
+            left: -450px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #t2{
+            position: relative;
+            top: 25px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: -100px;
+        }
+
+        #Professional{
+            position: relative;
+            top: 0px;
+            left: -30px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        #t3{
+            position: relative;
+            top: -20px;
+            padding: 100px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 87%;
+            height: 20px;
+            font-size: 20px;
+            padding-left: 20px;
+            left: 100px;
+        }
+
+        #VIP{
+            position: relative;
+            top: -20px;
+            left: -130px;
+            font-size: 20px;
+            font-style: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="navbar">
+            <h1 id="nav-1">Tech</h1>
+            <h1 id="nav-2">Conf</h1>
+            <span id="Home">Home</span>
+            <span id="Speakers">Speakers</span>
+            <span id="Schedule">Schedule</span>
+            <span id="Register">Register</span>
+            <button id="button-1">Register Now</button>
+        </div>
+    </nav>
+
+    <header>
+    <center>
+    <span id="p-1">R E G I S T E R</span>
+    <span id="p-2">N O W</span>
+    <h1 id="con-reg">Conference Registeration</h1>
+    <p id="p-3">Fill in details below to secure your spot at Tech Conference 2026.</p>
+    </center>
+    </header>
+
+    <main>
+        <center>
+        <div id="per-info">
+            <h1 id="h-1">Personal Information</h1>
+            <span id="name">Full Name</span>
+            <span class="star">*</span>
+            <br>
+            <input placeholder="Enter Your Full Name" id="FN" required/>
+            <br>
+            <span id="mail">Email</span>
+            <span class="star1">*</span>
+            <br>
+            <input placeholder="example@email.com" id="email" required/>
+            <br>
+            <span id="number">Phone</span>
+            <span id="star2">*</span>
+            <br>
+            <input type="tel" placeholder="+91 98765 43210" id="phone"/>
+            <br>
+            <span id="DOB">Date of Birth</span>
+            <span id="star3">*</span>
+            <br>
+            <input type="date" id="date"/>
+            <br>
+            <span id="gender">Gender</span>
+            <span id="star4">*</span>
+            <br>
+            <input type="radio" name="gender" id="g1"/>
+            <span id="male">Male</span>
+            <input type="radio" name="gender" id="g2"/>
+            <span id="female">Female</span>
+            <input type="radio" name="gender" id="g3"/>
+            <span id="other">Other</span>
+        </div>
+        <div id="con-pef">
+            <h1 id="h-2">Conference Preferences</h1>
+            <span id="ticket">Ticket Type</span>
+            <span id="star5">*</span>
+            <br>
+            <input type="radio" name="ticket" id="t1"/>
+            <span id="Student">Student</span>
+            <input type="radio" name="ticket" id="t2"/>
+            <span id="Professional">Professional</span>
+            <input type="radio" name="ticket" id="t3"/>
+            <span id="VIP">VIP</span>
+        </div>
+        </center>
+
+    </main>
+</body>
+</html>
