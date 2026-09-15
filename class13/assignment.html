@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav{
+            background-color: black;
+            height: 125px;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+        }   
+
+        #nav_heading{
+            color: white;
+            display: inline-block;
+            padding-top: 35px;
+            padding-left: 30px;
+            font-size: 30px;
+
+        }
+
+        .q{
+            color: white;
+            text-decoration: none;
+            padding-top: 35px;
+            vertical-align: middle;
+            padding-left: 40px;
+        }
+
+        #card{
+            height: 500px;
+            width: 350px;
+            border-radius: 12px;
+            margin: 50px auto;
+            /* padding-top: 100px; */
+            /* border: 1px solid black; */
+        }
+
+        #internal{
+            height: 200px;
+            width: 350px;
+            border-radius: 12px;
+            /* margin: 200px auto; */
+            position: relative;
+            overflow: hidden;
+        }
+
+        #img{
+            height: 200px;
+            width: 350px;
+            /* border-radius: 12px; */
+            /* overflow: hidden; */
+        }
+
+        #one{
+            background-color: rgb(73, 69, 69);
+            color: white;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 20px;
+            position: relative;
+            bottom: 70px;
+            left: 10px;
+        }
+
+        #two{
+            background-color: red;
+            color: white;
+            padding: 10px;
+            position: relative;
+            display: inline-block;
+            bottom: 210px;
+            right:70px;
+        }
+
+        #three{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            position: relative;
+            top: -195px;
+            left: 120px;
+        }
+
+        #in_card{
+            padding-left: 10px ;
+            padding-top: 50px;
+        }
+
+        p{
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        #four{
+            color: white;
+            text-decoration: none;
+        }
+
+        #five{
+            background-color: purple;
+            color: white;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 13px;
+            margin-top: 25px;
+            margin-left: 10px;
+            /* width: 100px; */
+        }
+
+        #six{
+            background-color: rgb(39, 182, 39);
+            color: white;
+            padding: 20px;
+            border-radius: 25px;
+            border: none;
+            position: fixed;
+            top: 720px;
+            left:1180px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1 id="nav_heading">🏠Dream House</h1>
+        <a href="" class="q">Home</a>
+        <a href="" class="q">Properties</a>
+        <a href="" class="q">About</a>
+    </div>
+
+    <div id="card">
+        <div id="internal">
+            <img src="https://plus.unsplash.com/premium_photo-1689609950112-d66095626efb?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" id="img"/>
+            <h5 id="one">₹50 Lakhs</h5>
+            <h5 id="two">FOR SALE</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTVWXAGU1K-JCLTE1E5rLgwRRJGfX9768y5cTxhZMhHPfwYlFdiB2d4g&s=10" id="three"/>
+        </div>
+        <h2 id="in_card">Beautiful 2BHK House</h2>
+        <p>📍Pune,Maharashta</p>
+        <p>🛏️2 Bedroom</p>
+        <p>🚿2 Bathrooms</p>
+        <p>📐 120 sq. ft</p>
+        <button id="five"><a href="" id="four">View Details</a></button>
+    </div>
+
+    <button id="six">💬Contact Us</button>
+</body>
+</html>
