@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #parent{
+            height: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        h1{
+            color: white;
+            display: inline-block;
+        }
+
+        #left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #right{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40%;
+        }
+
+        button{
+            background-color: yellow;
+            color: black;
+            border-radius: 30px;
+            border: none;
+            padding: 15px;
+            width: 100px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="left"><h1>Logo</h1></div>
+        <div id="right"><h1>Home</h1>
+        <h1>About</h1>
+        <h1>Contact up</h1>
+    <button>Login</button></div>
+    </div>
+</body>
+</html>
