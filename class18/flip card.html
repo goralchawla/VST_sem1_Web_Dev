@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+
+        #main{
+            height: 400px;
+            width: 300px;
+            position: relative;
+            margin: 50px auto;
+            transition: 4s;
+            transform-style: preserve-3d;
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        #card-a{
+            height: 50%;
+            width: 100%;
+            background-color: plum;
+            position: absolute;
+            z-index: 1;
+            backface-visibility: hidden;
+        }
+        #card-b{
+            height: 50%;
+            width: 100%;
+            background-color: green;
+            position: absolute;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card-a">card-a</div>
+        <div id="card-b">card-b</div>
+    </div>
+</body>
+</html>
