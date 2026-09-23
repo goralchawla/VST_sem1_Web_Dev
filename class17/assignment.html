@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 400px;
+            width: 400px;
+            transition-duration: 4s;
+        }
+        #one{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: 2px solid;
+            display: inline-block;
+            margin: 50px auto;
+            position: absolute;
+            transition-delay: 2s;
+        }
+        #parent:hover{
+            transform: rotateY(180deg); 
+        }
+        
+        #two{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(233, 170, 21);
+            border: 2px solid;
+            display: inline-block;
+            margin: 50px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="parent">
+    <div id="one"></div>
+    <div id="two"></div>
+    </div>
+    </center>
+</body>
+</html>
