@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #top{
+            background-color: black;
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #head1{
+            color: white;
+        }
+        #head2{
+            color: white;
+        }
+        nav{
+            background-color: white;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #nav1{
+            padding: 10px;
+        }
+        .nav1{
+            display: inline-block;
+            padding: 10px;
+            font-size: 13px;
+        }
+        #nav2{
+            font-size: 15px;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+        #nav3{
+            display: flex;
+        }
+        #main1{
+            width: 100%;
+            height: 650px;
+            position: relative;
+            
+        }
+        #img1{
+            width: 100%;
+            height: 100%;
+        }
+        #text11{
+            font-size: 20px;
+            padding-top: 7px;
+        }
+        #b1{
+            border: none;
+            background-color: white;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            transition: 1s;
+        }
+        #b2{
+            border: none;
+            background-color: grey;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            transition: 1s;
+            opacity: 30%;
+        }
+        #text1{
+            position: absolute;
+            top: 200px;
+            left: 20px;
+        }
+        b1:hover{
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <p id="head1">Find your perfect Range Rover.    <a href="" id="head2">Search in stock vehicle</a> </p>
+    </div>
+    <nav>
+        <div id="nav1">
+            <div class="nav1">VEHICLES</div>
+            <div class="nav1">OWNERS</div>
+            <div class="nav1">EXPLORE</div>
+            <div class="nav1">SHOP NOW</div>
+        </div>
+        <div id="nav2">RANGE ROVER</div>
+        <div id="nav3">
+        <div class="nav1">📍  RETAILERS</div>
+        <div class="nav1">🔖  BUILDS</div>
+        <div class="nav1">💬  SUPPORT & CHAT</div>
+        <div class="nav1">🔍</div>
+        </div>
+    </nav>
+    <div id="main1">
+        <img src="https://di-uploads-pod26.dealerinspire.com/landroveranaheimhills/uploads/2025/07/Range-Rover.jpg" id="img1"/>
+    </div>
+    <div id="text1">
+        <h1>BESPOKE DUO-TONE FADE <br> FINISH</h1>
+        <p id="text11">FOR THE FIRST TIME ON RANGE ROVER</p>
+        <br>
+        <button id="b1">COMMISSION YOURS</button>
+        <button id="b2">→ FIND OUT MORE</button>
+    </div>
+</body>
+</html>

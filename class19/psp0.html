@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            margin: 100px auto;
+            height: 500px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-content:space-between ;
+            background-color: pink;
+        }
+        .one{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(33, 152, 221);
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in;
+        }
+        .one:hover{
+            background-color: burlywood;
+            transform: scale(1.1);
+            letter-spacing: 5px;
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="one">Book Test Drive</div>
+        <div class="one">Book Test Drive</div>
+        <div class="one">Book Test Drive</div>
+        <div class="one">Book Test Drive</div>
+        <div class="one">Book Test Drive</div>
+    </div>
+</body>
+</html>
