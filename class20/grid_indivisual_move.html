@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 90vh;
+            border: 2px solid;
+            display: grid;
+            /* grid-template-columns: 300px 300px 300px; */
+            /* equally divides in given space */
+            grid-template-columns: 1fr 1fr 1fr; 
+            /* grid-template-rows: 300px 300px 300px; */
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .one{
+            border: 2px solid red;
+        }
+        #one{
+            background-color: aqua;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column: 2/3;
+        }
+        #two{
+            background-color: blue;
+        }
+        #three{
+            background-color: black;
+        }
+        #four{
+            background-color: rgb(255, 0, 221);
+        }
+        #five{
+            background-color: rgb(25, 176, 8);
+        }
+        #six{
+            background-color: rgb(202, 212, 18);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one" class="one"></div>
+        <div id="two" class="one"></div>
+        <div id="three" class="one"></div>
+        <div id="four" class="one"></div>
+        <div id="five" class="one"></div>
+        <div id="six" class="one"></div>
+        <div id="seven" class="one"></div>
+        <div id="eight" class="one"></div>
+        <div id="nine" class="one"></div>
+    </div>
+</body>
+</html>
