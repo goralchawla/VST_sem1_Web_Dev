@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #nav{
+            height: 200px;
+            width: 100%;
+            padding-left: 80px;
+        }
+        #main{
+            height: 150vh;
+            width: 90vw;
+            margin: 0px auto;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .one{
+            overflow: hidden;
+            border-radius: 12px;
+            z-index: 0;
+        }
+
+        .one img{
+            object-fit: cover;
+        }
+
+        img{
+            height: 100%;
+            border-radius: 12px;
+            width: 100%;
+            transition: 2s;
+            z-index: 0;
+            filter: brightness(1.1);
+        }
+
+        #div1{
+            grid-column: span 4;
+        }
+
+        #div6{
+            grid-column: span 2;
+        }
+        #div9{
+            grid-column: span 4;
+        }
+
+        .one:hover .c1{
+            opacity: 1;
+            transform: translateY(20px);
+        }
+        .one:hover .c2{
+            opacity: 1;
+        }
+        .one:hover img{
+            scale: 1.1;
+            opacity: 60%;
+            filter: blur(10px);
+        }
+        
+        .c1{
+            z-index: 1;
+            position: relative;
+            bottom: 150px;
+            left: 20px;
+            opacity: 0;
+            transition: 2s;
+        }
+        .c2{
+            z-index: 1;
+            position: relative;
+            bottom: 90%;
+            left: 90%;
+            opacity: 0;
+            transition: 2s;
+            background-color: aqua;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <p style="letter-spacing: 5px; color: rgb(182, 174, 174); font-size: 12px;">MY COLLECTION</p>
+        <h1 style="color: white; font-size: 32px;">Moments</h1>
+        <p style="color: rgb(190, 173, 173); font-size: 15px;">A collection of places, people and memories</p>
+    </div>
+    <div id="main">
+        <div id="div1" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">01</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div2" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <div class="c2">02</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div3" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">03</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div4" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">04</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div5" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">05</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div6" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">06</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div7" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">07</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div8" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">08</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+        <div id="div9" class="one"><img src="https://images.unsplash.com/photo-1790948151282-58b5c93774a6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="c2">09</div>
+        <div class="c1"><h2>Blue Horizon</h2><p>Mountains.adventure.</p></div></div>
+    </div>
+</body>
+</html>
