@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h2{
+            color: white;
+            margin:20px ;
+        }
+        #parent{
+            height: 250vh;
+            width: 70%;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .one{
+            height: 200px;
+            width: 350px;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            /* background-color: brown; */
+            border-radius: 12px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+        #div1{
+            background-image: linear-gradient(red,blue);
+        }
+        #div2{
+            background-image: linear-gradient(to right ,red,blue);
+        }
+        #div3{
+            background-image: linear-gradient(to left ,red,blue);
+        }
+        #div4{
+            background-image: linear-gradient(to top ,red,blue);
+        }
+        #div5{
+            background-image: linear-gradient(to bottom right ,red,blue);
+        }
+        #div6{
+            background-image: linear-gradient(45deg ,red,blue);
+        }
+        #div7{
+            background-image: linear-gradient(to right ,red,orange,yellow,green,blue, purple);
+        }
+        #div8{
+            background-image: linear-gradient(to right,red 0%,yellow 50%,blue 100%);
+        }
+        #div9{
+            background-image: linear-gradient(to right ,red 50%,blue 50%);
+        }
+        #div10{
+            background-image: radial-gradient(red,blue);
+        }
+        #div11{
+            background-image: radial-gradient(circle,red,blue);
+        }
+        #div12{
+            background-image: radial-gradient(circle,red,orange,yellow,blue);
+        }
+        #div13{
+            background-image: radial-gradient(circle at top left,red,blue);
+        }
+        #div14{
+            background-image: radial-gradient(circle at 30% 40%,red,blue);
+        }
+        #div15{
+            background-image: conic-gradient(red,yellow,green,blue,red);
+        }
+        #div16{
+            background-image: conic-gradient(red 0deg,yellow 90deg,green 180deg,blue 270deg,red 360deg);
+        }
+        #div17{
+            background-image: conic-gradient(from 45deg,red,blue,green);
+        }
+    </style>
+</head>
+<body>
+    <center><h2>CSS Gradient</h2></center>
+    <div id="parent">
+        <div id="div1" class="one">Linear Gradient</div>
+        <div id="div2" class="one">Linear Right</div>
+        <div id="div3" class="one">Linear Left</div>
+        <div id="div4" class="one">Linear Top</div>
+        <div id="div5" class="one">Diagonal</div>
+        <div id="div6" class="one">45 Degree</div>
+        <div id="div7" class="one">Multiple colors</div>
+        <div id="div8" class="one">Color stops</div>
+        <div id="div9" class="one">Hard stops</div>
+        <div id="div10" class="one">Radial</div>
+        <div id="div11" class="one">Radial Circle</div>
+        <div id="div12" class="one">Radial Multiple</div>
+        <div id="div13" class="one">Radial Position</div>
+        <div id="div14" class="one">Exact position</div>
+        <div id="div15" class="one">Conic Gradient</div>
+        <div id="div16" class="one">Conic with deg</div>
+        <div id="div17" class="one">Conic angle</div>
+        <div id="div18" class="one"></div>
+        <div id="div19" class="one"></div>
+        <div id="div20" class="one"></div>
+        <div id="div21" class="one"></div>
+    </div>
+</body>
+</html>
