@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .p{
+            height: 200px;
+            width: 100%;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            position: absolute;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #div1{
+            bottom: 88%;
+            left: 0%;
+        }
+        #div2{
+            bottom: 88%;
+            left: 94%;
+        }
+        #div3{
+            bottom: 0%;
+            left: 0%;
+        }
+        #div4{
+            bottom: 0%;
+            left: 94%;
+        }
+        #center{
+            display: flex;
+            height: 50vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .x{
+            border: 2px solid;
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="m1" class="p">
+        <div id="div1" class="one"><div class="x"></div></div>
+        <div id="div2" class="one"><div class="x"></div></div>
+    </div>
+    <div id="m2" class="p">
+        <div id="div3" class="one"><div class="x"></div></div>
+        <div id="div4" class="one"><div class="x"></div></div>
+    </div>
+    <div id="center">
+        <div id="c1" class="two"><div class="x"></div></div>
+    </div>
+</body>
+</html>
