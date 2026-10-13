@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .carousel{
+            margin: 100px auto;
+            width: 90%;
+            border: 5px solid;
+            display: flex;
+            overflow: hidden;
+        }
+        .group{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            padding-right: 20px;
+        }
+        .track{
+            display: flex;
+            animation:scroll 12s linear infinite;
+            width: max-content;
+        }
+        .card{
+            width: 400px;
+            height: 30vh;
+            padding: 2vh;
+            background-color: aqua;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid rgb(248,246,246);
+        }
+        @keyframes scroll{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+
+        .carousel:hover .track{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="track">
+            <div class="group">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+            </div>
+
+            <div class="group">
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
