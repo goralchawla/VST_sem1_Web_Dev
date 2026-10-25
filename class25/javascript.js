@@ -120,3 +120,161 @@
 // }
 
 
+
+
+
+
+
+
+
+
+//primitve v/s non primitive------>
+
+//1.Array: --> square brackets
+// let arr=[1,2,"hello"]
+
+// let a=[]
+// let b=[]
+// console.log(a==b);        //false-->different addresses
+
+//indexing is same as java
+
+
+
+
+
+
+
+//2.Object: -->curly braces.  -->key value pair.       -->kind of dictionary in python       -->value is always extracted through keys
+// let student={
+//     name:"Goral",
+//     lastname:"chawla",
+//     age:18,
+// }
+// console.log(student.name);        //to access the value in object using it's key
+
+
+
+
+
+
+
+
+// let arr=[1,2,3,4,5,6]
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+
+
+
+//reducing the arguements inside for loop
+//for in loop. --> i is index of array in loop
+// for(let i in arr){
+//     console.log(arr[i]);
+// }
+
+
+
+//for of loop. --> i is value of array in loop 
+// for(let i of arr){
+//     console.log(i);
+// }
+
+
+
+
+
+
+//even odd
+// for(let i of arr){
+//     if(i%2==0){
+//         console.log(i);
+//     }
+// }
+// for(let i of arr){
+//     if(i%2!=0){
+//         console.log(i);
+//     }
+// }
+
+
+
+
+
+//prime
+// let a=prompt()
+// let count=0
+// for(let i=1;i*i<a;i++){
+//     if(i*i==a){
+//         count++;
+//     }
+//     else if(a%i==0){
+//         count+=2
+//     }
+// }
+// if(count==2){
+//     console.log("prime");
+// }else{
+//     console.log("not prime");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//null v/s undefined
+
+//undefined
+// let a
+// console.log(a);
+//not defining value in a variable
+
+
+
+
+//nesting array
+// let arr=[1,2,3,[5,6]]
+// console.log(arr[3][1]);
+
+
+
+
+
+//nesting object
+// let obj={
+//     name:"om",
+//     details:{
+//         age:1
+//     }
+// }
+// console.log(obj.details.age);
+
+
+
+
+
+
+
+
+// for(let i=1;i<=4;i++){
+//     let str=''
+//     for(let j=1;j<=i;j++){
+//         str=str+'*'
+//     }
+//     console.log(str);
+// }
+
+
+
+
+
