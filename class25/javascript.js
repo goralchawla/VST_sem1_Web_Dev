@@ -278,3 +278,97 @@
 
 
 
+
+//Array ---> Method predefined
+// let arr=[1,2,3,4,5,6]
+// console.log(arr.length);
+// arr.push(7)   -->adds at last
+// console.log(arr);
+// arr.pop()     -->deletes from last
+// console.log(arr);
+// arr.unshift(0)   -->adds from starting
+// console.log(arr);
+// arr.shift()    -->deletes from starting
+// console.log(arr);
+
+
+
+
+
+
+//Funtions in JS
+//-->can be called above function also
+// function sum(){
+//     console.log("hello");
+// }
+// sum()
+
+
+//arrow function   -->can not be called above function
+// var sum=()=>{
+//     console.log("hello");
+// }
+// sum()
+
+
+
+
+//passing parameter in function
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// sum(4,2)
+ 
+
+
+
+
+
+
+//triangle printing function
+// function pattern(n){
+//     for(let i=1;i<=n;i++){
+//         let str=''
+//         for(let j=1;j<=i;j++){
+//             str=str+'😋'
+//         }
+//         console.log(str);
+//     }
+// }
+// pattern(4)
+
+
+
+
+
+//index finding of targetted element
+// let arr=[1,2,3,4,53,4,5667,5]
+// let target=53
+// function targetF(arr,tar){
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]==tar){
+//             console.log(i);
+//         }
+//     }
+// }
+// targetF(arr,target)
+
+
+
+
+
+
+//method   -->function inside object
+// let obj={
+//     id:1,
+//     name:"om",
+//     lastname:"jain",
+//     FullName:()=>{
+//         console.log(obj.name+" "+obj.lastname);
+//     }
+// }
+// obj.FullName()
+
+
+
+
