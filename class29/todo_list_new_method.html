@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            background-color: white;
+            width: 50%;
+            padding: 10px;
+        }
+        input{
+            width: 90%;
+            padding: 5px;
+        }
+        button{
+            margin-left: 5%;
+            padding: 5px;
+        }
+        .list{
+            background-color: grey;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center>
+    <h1>To do list</h1>
+    <input placeholder="Enter a task"/>
+    <br>
+    <br>
+    
+        </center>
+    <button>add</button>
+    </div>
+    <script>
+        let btn=document.querySelector("button");
+        let inp=document.querySelector("input");
+        let body=document.querySelector("body");
+        let count=0;
+        let div=document.querySelector("div");
+
+        btn.onclick=function(){
+            let li=document.createElement("h4");
+            let button=document.createElement("button")
+            button.textContent="edit"
+            li.innerText=inp.value;
+            let deletebtn = document.createElement("button");
+            div.append(li);
+            li.append(button);
+            li.append(deletebtn);
+            li.classList="list"
+
+         
+            deletebtn.textContent="delete"
+            deletebtn.classList="deletebtn"
+
+            deletebtn.addEventListener("click",function(){
+            li.remove();
+            })
+            // li.onclick=function(){
+            //     // li.remove();
+            //     // li.style.color='red';
+            //     count++;
+            //     if(count%2==0){
+            //         li.style.color="black"
+            //         count%=2;
+            //     }else{
+            //         li.style.color='red'
+            //         count%=2;
+            //     }
+            // }
+            button.onclick=function(){
+                let a=prompt();
+                li.innerText=a;
+                li.append(button);
+                li.append(deletebtn);
+                inp.value=""
+            }
+
+            
+
+            inp.value=""
+        }
+
+    </script>
+</body>
+</html>
