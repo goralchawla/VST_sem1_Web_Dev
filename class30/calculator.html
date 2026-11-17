@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        #container{
+            margin-top: 50px;
+            width: 60%;
+            height: 90vh;
+            display: grid;
+            grid-template-rows: 15% 15% 15% 15% 15%;
+            grid-template-columns: 23% 23% 23% 23%;
+            gap: 12px;
+        }
+        input{
+            grid-column: span 4;
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: 60px;
+            text-align: right;
+        }
+        input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        button{
+            border-radius: 50%;
+            border: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        .whitebtn{
+            background-color: white;
+            color: black;
+        }
+        .greybtn{
+            background-color: grey;
+        }
+        .yellowbtn{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input/>
+        <button class="whitebtn">C</button>
+        <button class="whitebtn">**</button>
+        <button class="whitebtn">%</button>
+        <button class="yellowbtn">/</button>
+        <button class="greybtn">7</button>
+        <button class="greybtn">8</button>
+        <button class="greybtn">9</button>
+        <button class="yellowbtn">*</button>
+        <button class="greybtn">4</button>
+        <button class="greybtn">5</button>
+        <button class="greybtn">6</button>
+        <button class="yellowbtn">-</button>
+        <button class="greybtn">1</button>
+        <button class="greybtn">2</button>
+        <button class="greybtn">3</button>
+        <button class="yellowbtn">+</button>
+        <button class="greybtn" id="zero">0</button>
+        <button class="greybtn">.</button>
+        <button class="yellowbtn">AC</button>
+        <button class="yellowbtn">=</button>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
